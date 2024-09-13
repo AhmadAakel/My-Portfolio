@@ -1,0 +1,30 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.AppBar {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+h3 span {
+  color: #0a58ca;
+}
+
+#home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #ffffff, #f0f4ff);
+}
+
+button {
+  background-color: #0a58ca;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #004c99;
+}
