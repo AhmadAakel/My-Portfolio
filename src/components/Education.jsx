@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Grid, Typography, Button, Container } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import contactBoxImage from "../assets/contact-box.png";
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const Education = ({ scrollToSection }) => {
   const theme = useTheme();
@@ -15,18 +16,34 @@ const Education = ({ scrollToSection }) => {
       }}
     >
       <Container maxWidth="lg">
-        <Typography
-          variant="h4"
-          component="h2"
-          gutterBottom
-          style={{
-            fontFamily: "Poppins, sans-serif",
-            fontWeight: "bold",
-            color: theme.palette.text.primary,
-          }}
+        <Box
+          display="flex"
+          justifyContent="space-between"
+          alignItems="center"
+          mb={2}  
         >
-          Education & Experience
-        </Typography>
+          <Typography
+            variant="h4"
+            component="h2"
+            gutterBottom
+            style={{
+              fontFamily: "Poppins, sans-serif",
+              fontWeight: "bold",
+              color: theme.palette.text.primary,
+            }}
+          >
+            Education & Experience
+          </Typography>
+
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={() => scrollToSection("nav")}
+            rel="noopener noreferrer"
+          >
+            <ArrowUpwardIcon />
+          </Button>
+        </Box>
 
         <Grid container spacing={4}>
           <Grid item xs={12} md={6}>
@@ -119,7 +136,7 @@ const Education = ({ scrollToSection }) => {
                 style={{ color: theme.palette.text.secondary }}
               >
                 blog and news website developed using Laravel, s to-do app built with PHP and Bootstrap,
-                and a portfolio showcase using Laravel and API integrations. Additionally, 
+                and a portfolio showcase using Laravel and API integrations. Additionally,
                 I have worked on several training projects..
               </Typography>
             </Box>
