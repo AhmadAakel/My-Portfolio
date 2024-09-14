@@ -24,9 +24,10 @@ const Navbar = ({ scrollToSection, handleThemeChange, darkMode }) => {
               flexGrow: 1,
               fontFamily: "Poppins, sans-serif",
               fontWeight: "bold",
+              fontSize:'25px'
             }}
           >
-            Ahmad Akel
+            Ahmad<span style={{ color: theme.palette.primary.main }}>Aakel</span>
           </Typography>
           <Tabs value={false} textColor="inherit" indicatorColor="primary">
             <Tab
