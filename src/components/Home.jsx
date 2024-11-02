@@ -72,7 +72,7 @@ const Home = () => {
             >
               <img
                 src={personal}
-                alt="Laura Frontend Developer"
+                alt="Ahmad Frontend Developer"
                 style={{
                   maxWidth: "50%",
                   height: "auto",
